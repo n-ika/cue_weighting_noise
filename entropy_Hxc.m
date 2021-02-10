@@ -18,4 +18,4 @@ function H_xc = entropy_Hxc(det1, det2, c_priors)
 diff_entropy_1 = log2(2*pi*exp(1)) + 1/2*log2(det1);
 diff_entropy_2 = log2(2*pi*exp(1)) + 1/2*log2(det2);
 
-H_xc = - ( c_priors(1) * diff_entropy_1 + c_priors(2) * diff_entropy_2 );
+H_xc = c_priors(1) * diff_entropy_1 + c_priors(2) * diff_entropy_2;
